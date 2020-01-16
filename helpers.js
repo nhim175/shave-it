@@ -1,4 +1,5 @@
 const { readdirSync, existsSync, rmdirSync } = require('fs')
+const trash = require('trash')
 const path = require('path')
 
 module.exports.getDirectories = source =>
@@ -9,5 +10,4 @@ module.exports.getDirectories = source =>
 module.exports.hasNodeModules = dir =>
   existsSync(path.join(dir, 'node_modules'))
 
-module.exports.removeNodeModules = dir =>
-  rmdirSync(path.join(dir, 'node_modules'), { recursive: true })
+module.exports.trashNodeModules = dir => trash(path.join(dir, 'node_modules'))

@@ -1,6 +1,6 @@
 # shave-it
 
-Let you choose and remove `node_modules` from selected local repos.
+Let you choose and move to trash `node_modules` from selected local repos.
 
 ## Motivation
 

@@ -2,7 +2,7 @@
 const {
   getDirectories,
   hasNodeModules,
-  removeNodeModules
+  trashNodeModules
 } = require('../helpers')
 const path = require('path')
 const inquirer = require('inquirer')
@@ -24,9 +24,9 @@ inquirer
       choices: dirNames
     }
   ])
-  .then(answers => {
+  .then(async answers => {
     for (const dirName of answers[question]) {
-      removeNodeModules(path.join(dir, dirName))
-      console.log(`🧹 Removed node_modules from ${dirName}`)
+      await trashNodeModules(path.join(dir, dirName))
+      console.log(`🧹 Trashed node_modules from ${dirName}`)
     }
   })
