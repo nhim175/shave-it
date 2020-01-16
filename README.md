@@ -18,7 +18,7 @@ $ npm install shave-it -g
 $ shave-it ~/Dev
 ```
 
-where `~/Dev` is where I store my dev projects. `shave-it` will ask you to select folders:
+`~/Dev` is the directory where I store my dev projects. `shave-it` will ask you to select folders:
 
 ```
 ? Select folders you want to remove node_modules from: (Press <space> to select, <a> to toggle all, <i> to invert selection)
