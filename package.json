@@ -14,5 +14,9 @@
   "dependencies": {
     "inquirer": "^7.0.3",
     "yargs": "^15.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nhim175/shave-it.git"
   }
 }
